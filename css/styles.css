@@ -668,7 +668,7 @@ activities {
     
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration: 250ms;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);           
 }
 
@@ -869,7 +869,7 @@ activities {
 }
 .backdrop {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
 }
@@ -906,7 +906,7 @@ activities {
 
 
 }
-.modal-close-icon
+/* .modal-close-icon */
 
 .is-hidden {
     visibility: hidden;
