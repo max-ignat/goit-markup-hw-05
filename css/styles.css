@@ -877,7 +877,7 @@ activities {
 }
 
 .backdrop.is-hidden .modal {
-    transform: scale(1.5) translate();
+    transform: scale(1.5) translateX(100%);
     transition: transform 1000ms;
 }
 .modal {
@@ -889,7 +889,7 @@ activities {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: scale(1) translate();
+    transform: scale(1) translateX(100%);
     transform: translate(-50%, -50%);
     transition: transform 1000ms;
 }
@@ -905,10 +905,15 @@ activities {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
-
+.modal-close:hover,
+.modal-close:focus {
+    fill: var(--hover-color);
+}
 
 .is-hidden {
     visibility: hidden;
