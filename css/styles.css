@@ -873,6 +873,11 @@ activities {
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
 }
+
+.backdrop.is-hidden .modal {
+    transform: scale(1.5) translate();
+    transition: transform 1000ms;
+}
 .modal {
     width: 528px;
     min-height: 581px;
@@ -882,7 +887,9 @@ activities {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: scale(1) translate();
     transform: translate(-50%, -50%);
+    transition: transform 1000ms;
 }
 .modal-close {
     widows: 30px;
