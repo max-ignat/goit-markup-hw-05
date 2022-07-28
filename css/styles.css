@@ -841,9 +841,9 @@ activities {
     fill: currentColor;
 
 }
-.footer-left {
+/* .footer-left {
 
-}
+} */
 
 .footer-center {
     margin-left: 70px;
@@ -871,6 +871,8 @@ activities {
     width: 100vw;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -892,12 +894,12 @@ activities {
     transition: transform 1000ms;
 }
 .modal-close {
-    widows: 30px;
+    width: 30px;
     height: 30px;
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     display: flex;
@@ -906,7 +908,7 @@ activities {
 
 
 }
-/* .modal-close-icon */
+
 
 .is-hidden {
     visibility: hidden;
