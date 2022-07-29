@@ -231,6 +231,7 @@ button {
     padding-bottom: 32px;
     position: relative;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -312,6 +313,7 @@ button {
     align-items: center;
     text-align: center;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -336,6 +338,7 @@ button {
     line-height: 1.62;
     letter-spacing: 0.03em;
 
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -382,6 +385,7 @@ button {
     text-align: left;
     color: var(--secondary-text);
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
@@ -398,6 +402,7 @@ button {
     margin-right: 10px;
     fill: currentColor;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -408,6 +413,7 @@ button {
     margin-right: 10px;
     fill: currentColor;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -433,6 +439,7 @@ button {
     line-height: 1.71;
     color: white;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -551,13 +558,18 @@ activities {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px 0px;
+    
     width: 100%;
+    height: 70px; 
 }
 .team {
     background-color: var(--team-bcg);
@@ -621,6 +633,7 @@ activities {
     margin-right: 30px;
     margin-bottom: 30px;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -648,10 +661,12 @@ activities {
     
     
 }
-.project-item:hover .grid-card-text {
+.grid-card-link:hover .grid-card-text {
     transform: translateY(0);
 }
-
+.grid-card-link:focus .grid-card-text {
+    transform: translateY(0);
+}
 .grid-card-text {
     width: 100%;
     height: 100%;
@@ -674,6 +689,9 @@ activities {
 
 .grid-card-link {
     display: block;
+    transition-property: box-shadow;
+    transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .grid-card-link:hover {
@@ -717,6 +735,8 @@ activities {
     color: #AFB1B8;
     width: 44px;
     height: 44px;
+
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -766,6 +786,7 @@ activities {
     align-items: center;
     color: var(--clients-color);
     
+    transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -821,6 +842,7 @@ activities {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -874,6 +896,7 @@ activities {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
+        transition: opacity 1000ms, visibility 1000ms;
 }
 
 .backdrop.is-hidden .modal {
@@ -902,9 +925,11 @@ activities {
     position: fixed;
     top: 10px;
     right: 10px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
